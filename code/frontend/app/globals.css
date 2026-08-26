@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #FFFFFF;
+  --color-border: #000000;
+  --color-text: #000000;
+  --color-text-muted: #666666;
+  --color-primary: #000000;
+  --color-primary-text: #FFFFFF;
+  --color-success: #000000;
+  --color-warning: #000000;
+  --color-danger: #000000;
+  --color-focus: #000000;
+  --space-2: 16px;
+  --space-4: 32px;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-heading: Arial, Helvetica, sans-serif;
+  --text-3xl-size: clamp(3rem, 12vw, 8rem);
+  --text-3xl-line-height: 0.95;
+  --text-3xl-weight: 700;
+  --text-sm-size: 12px;
+  --text-sm-line-height: 1;
+  --text-sm-weight: 400;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-full: 0;
+  --border-width: 0;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --duration-fast: 0s;
+  --duration-base: 0s;
+  --easing: linear;
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: var(--duration-fast);
+    scroll-behavior: auto;
+    transition-duration: var(--duration-fast);
+  }
+}
