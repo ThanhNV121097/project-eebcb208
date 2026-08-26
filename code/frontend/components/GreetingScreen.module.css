@@ -1,0 +1,28 @@
+.screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.greeting {
+  margin: 0;
+  font-size: var(--text-3xl-size);
+  line-height: var(--text-3xl-line-height);
+  font-weight: var(--text-3xl-weight);
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+
+.hint {
+  position: fixed;
+  left: var(--space-2);
+  bottom: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm-size);
+  line-height: var(--text-sm-line-height);
+  font-weight: var(--text-sm-weight);
+  user-select: none;
+}
